@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace Facade
+{
+    public class Client
+    {
+        public static void Main()
+        {
+            Facade _facade = new Facade(new DVD(), new TV(), new Audio());
+            _facade.On();
+            _facade.Off();
+        }
+    }
+}
+
