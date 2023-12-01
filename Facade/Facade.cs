@@ -16,6 +16,7 @@ public class Facade
     public void On()
     {
         Console.WriteLine("\nВлючение домашнего кинотеатра");
+        //_nwolc.Print("clown");
         _tv.On();
         _dvd.In();
         _audio.On();
